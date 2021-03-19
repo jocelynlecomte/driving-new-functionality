@@ -145,5 +145,9 @@ public class OptimizerTests {
     protected void thenHotSpotCountIs(HotspotKey key, int count) {
         assertEquals(count, searchResults.getHotspot(key).getMembers().size(), key.toString());
     }
+
+    protected void givenUserSegment(UserSegment value) {
+        searchResults.setUserSegment(value);
+    }
 }
 
